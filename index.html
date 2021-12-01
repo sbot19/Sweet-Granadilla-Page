@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1: Sweet Granadilla</title>
+    <style>
+    
+      body{
+        background-color:#fdd8e8;
+      }
+      h1 {
+        color: rgb(255, 136, 0);
+        font-size: 70px;
+        font-family: Creativity Thin;
+        text-align: center;
+        line-height: 20px;
+      }
+      h2 {
+        font-family: avenir light;
+        color: rgb(255, 2, 129);
+        font-weight: lighter;
+        text-align: center;
+      }
+
+      .central-section {
+        background: linear-gradient(to top, #fad586 0%, #bafafd 100%);
+        font-family: avenir light;
+        color: #358126;
+        border: none;
+        margin: 50px auto;
+        padding: 40px;
+        width: 65%;
+        border-radius: 10px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.31);
+      }
+      p {
+        display: block;
+        margin: 5px 150px;
+        line-height: 1.5;
+      }
+      hr {
+        margin: 5px 150px;
+      }
+      .fruit {
+        color: rgb(125, 125, 231);
+        font-weight: bolder;
+      }
+      .more-info {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+
+      .weblink:hover{
+        color:rgb(255, 2, 129);
+
+      }
+      a:visited {
+        color: inherit;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+      }
+        
+      .coded-by{
+        text-align: center;
+      }
+      button {
+        display: block;
+        color: #ffffff;
+        background: rgb(255, 136, 0);
+        margin: 0 auto;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 7px;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.192);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: rgb(255, 2, 129);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="central-section">
+    <h1>Sweet Granadilla</h1>
+    <h2>A delicious fruit from Latin America</h2>
+    <p>
+      <span class="fruit"><strong> Sweet granadilla</strong>,</span> also known
+      as <em>passiflora ligularis</em> grows mainly in Peru but also as north as
+      Mexico and south as northern Argentina. It grows in tropical climates
+      ranging from 59°F to 64°F. The plant consists of abundant leaves and
+      greenish-white flowers. The fruit consists a orange-yellow shell on the
+      oustide and dark seeds surrounded by transluscent, gelatinous pulp on the
+      inside. The fruit is fragrant and has a soft sweet taste.
+      
+      <div class="more-info">
+      <br />For more info, check out
+      <a class ="weblink"
+        href="https://en.wikipedia.org/wiki/Passiflora_ligularis"
+        target="Granadilla information"
+        >Wikipedia</a></div>
+    </p>
+    <br />
+    <hr />
+    <br />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/186/original/granadilla.jpeg?1630193470"
+      width="350"
+    />
+    <br />
+    <button>Buy a plant</button>
+    <br />
+    <p class="coded-by">
+      This page was built by <br /> Scarleth Bernabe
+    </p>
+    </div>
+    
+    
+    
+    <script>
+      function email() {
+        let name = prompt("What is your name?");
+        let signup = prompt("Sign up with your email for more information.");
+          if (signup.length === 0) {
+          alert(`You can sign up later.`);
+        } else { alert(`Thank you, ${name}, for signing up!`);
+        }
+      }
+
+      let emailButton = document.querySelector("button");
+      emailButton.addEventListener("click", email);
+      
+    </script>
+  </body>
+</html>
